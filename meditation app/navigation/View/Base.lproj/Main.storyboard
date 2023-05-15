@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VNy-Nj-YFS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VNy-Nj-YFS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucas-calloch-P-yzuyWFEIk-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-fv-1BK">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucas-calloch-P-yzuyWFEIk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-fv-1BK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q8-Xi-QEe">
-                                <rect key="frame" x="24" y="595" width="345" height="70"/>
+                                <rect key="frame" x="24" y="536" width="345" height="70"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="GZp-fl-tX7"/>
@@ -34,19 +35,8 @@
                                     <segue destination="CeI-3p-F9B" kind="show" identifier="goToHighScore" id="fBn-Pu-s00"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTs-fL-DJa">
-                                <rect key="frame" x="85" y="59" width="223" height="70"/>
-                                <color key="backgroundColor" systemColor="separatorColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="D3f-xn-Ata"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Zen Zone">
-                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-3X-TVy">
-                                <rect key="frame" x="24" y="498" width="345" height="70"/>
+                                <rect key="frame" x="24" y="439" width="345" height="70"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="z0S-92-Nge"/>
@@ -59,6 +49,17 @@
                                 <connections>
                                     <segue destination="HaA-ol-Shg" kind="show" identifier="goToSetting" id="irL-ub-cPb"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTs-fL-DJa">
+                                <rect key="frame" x="85" y="56" width="223" height="70"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="D3f-xn-Ata"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Zen Zone">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -90,15 +91,15 @@
             <objects>
                 <viewController storyboardIdentifier="SettingViewController" id="HaA-ol-Shg" customClass="SettingViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mTk-PK-Tzb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ameen-fahmy-LaxGR2DKTM4-unsplash.jpg" id="pYo-vL-z49">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ameen-fahmy-LaxGR2DKTM4-unsplash" id="pYo-vL-z49">
                                 <rect key="frame" x="0.0" y="-18" width="393" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNB-ha-1da">
-                                <rect key="frame" x="100" y="129" width="193" height="34"/>
+                                <rect key="frame" x="100" y="70" width="193" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ycE-B3-T3a"/>
                                 </constraints>
@@ -106,13 +107,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="5" maxValue="3600" translatesAutoresizingMaskIntoConstraints="NO" id="iTS-CV-Jmh">
-                                <rect key="frame" x="88" y="222" width="217" height="31"/>
+                                <rect key="frame" x="88" y="163" width="217" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="BIU-vt-Pf1"/>
                                 </constraints>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtP-Ol-cDL">
-                                <rect key="frame" x="100" y="187" width="193" height="25"/>
+                                <rect key="frame" x="100" y="128" width="193" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="qoQ-N5-b2z"/>
                                 </constraints>
@@ -121,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's mood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai8-Tc-RC5">
-                                <rect key="frame" x="100" y="89" width="193" height="20"/>
+                                <rect key="frame" x="100" y="30" width="193" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="mkT-uq-kAa"/>
                                 </constraints>
@@ -137,7 +138,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-4z-k3a">
-                                <rect key="frame" x="36" y="226" width="34" height="21"/>
+                                <rect key="frame" x="36" y="167" width="34" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ke5-nI-Ydj"/>
                                 </constraints>
@@ -146,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04R-uc-F3M">
-                                <rect key="frame" x="49" y="325" width="8" height="21"/>
+                                <rect key="frame" x="49" y="266" width="8" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6JV-VQ-jdw"/>
                                 </constraints>
@@ -155,7 +156,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-Z8-5i9">
-                                <rect key="frame" x="313" y="326" width="18" height="21"/>
+                                <rect key="frame" x="313" y="267" width="18" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="seK-S5-AVB"/>
                                 </constraints>
@@ -164,7 +165,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsV-yK-Pp2">
-                                <rect key="frame" x="313" y="226" width="70" height="21"/>
+                                <rect key="frame" x="313" y="167" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HId-ni-Ama"/>
                                 </constraints>
@@ -173,7 +174,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song choice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahj-KD-9II">
-                                <rect key="frame" x="85" y="292" width="223" height="21"/>
+                                <rect key="frame" x="85" y="233" width="223" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="hku-xw-DrM"/>
                                 </constraints>
@@ -182,13 +183,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="31i-RE-XXG">
-                                <rect key="frame" x="91" y="322" width="211" height="30"/>
+                                <rect key="frame" x="91" y="263" width="211" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Abr-Ea-g0t"/>
                                 </constraints>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-Al-qhE">
-                                <rect key="frame" x="85" y="587" width="246" height="64"/>
+                                <rect key="frame" x="85" y="528" width="246" height="64"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="DqH-qt-eIb"/>
@@ -256,10 +257,10 @@
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="Ysz-aI-fbY" customClass="GameViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zUf-Un-uOP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panuson-norkaew-3ot8O0t5beE-unsplash.jpg" id="rbO-6I-oTE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panuson-norkaew-3ot8O0t5beE-unsplash" id="rbO-6I-oTE">
                                 <rect key="frame" x="0.0" y="-18" width="393" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -297,7 +298,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ameen-fahmy-LaxGR2DKTM4-unsplash.jpg" id="f8y-dd-eef">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ameen-fahmy-LaxGR2DKTM4-unsplash" id="f8y-dd-eef">
                                 <rect key="frame" x="0.0" y="17" width="393" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -315,11 +316,11 @@
             <objects>
                 <viewController storyboardIdentifier="HighScoreViewController" id="CeI-3p-F9B" customClass="HighScoreViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gNm-Jb-lV6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sjn-78-26D">
-                                <rect key="frame" x="0.0" y="99" width="393" height="582"/>
+                                <rect key="frame" x="0.0" y="40" width="393" height="700"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="3Xz-R9-fkb" detailTextLabel="Pvu-vK-r9d" style="IBUITableViewCellStyleValue1" id="br3-wu-15y">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="43.666667938232422"/>
@@ -352,7 +353,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQf-id-foG">
-                                <rect key="frame" x="135" y="689" width="123" height="70"/>
+                                <rect key="frame" x="135" y="748" width="123" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="0Ku-Kz-oke"/>
@@ -411,9 +412,9 @@
         <segue reference="mKa-cI-C7H"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="ameen-fahmy-LaxGR2DKTM4-unsplash.jpg" width="1781" height="2226"/>
-        <image name="lucas-calloch-P-yzuyWFEIk-unsplash.jpg" width="6853" height="4579"/>
-        <image name="panuson-norkaew-3ot8O0t5beE-unsplash.jpg" width="6000" height="4000"/>
+        <image name="ameen-fahmy-LaxGR2DKTM4-unsplash" width="1781" height="2226"/>
+        <image name="lucas-calloch-P-yzuyWFEIk-unsplash" width="6853" height="4579"/>
+        <image name="panuson-norkaew-3ot8O0t5beE-unsplash" width="6000" height="4000"/>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
