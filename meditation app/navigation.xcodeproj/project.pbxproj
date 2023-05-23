@@ -14,9 +14,9 @@
 		5C18C77A29F5BB7800A28943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C18C77929F5BB7800A28943 /* Assets.xcassets */; };
 		5C18C77D29F5BB7800A28943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C18C77B29F5BB7800A28943 /* LaunchScreen.storyboard */; };
 		5C18C78829F6A18900A28943 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78729F6A18900A28943 /* SettingViewController.swift */; };
-		5C18C78A29F6A19C00A28943 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78929F6A19C00A28943 /* GameViewController.swift */; };
-		5C18C78C29F6A1B000A28943 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78B29F6A1B000A28943 /* HighScoreViewController.swift */; };
-		5C18C78E29F6B22000A28943 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78D29F6B22000A28943 /* Bubble.swift */; };
+		5C18C78A29F6A19C00A28943 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78929F6A19C00A28943 /* MeditationViewController.swift */; };
+		5C18C78C29F6A1B000A28943 /* MeditationTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */; };
+		7DD290F02A1D10C0000C4245 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		5C18C77C29F5BB7800A28943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C18C77E29F5BB7800A28943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C18C78729F6A18900A28943 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		5C18C78929F6A19C00A28943 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5C18C78B29F6A1B000A28943 /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
-		5C18C78D29F6B22000A28943 /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		5C18C78929F6A19C00A28943 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTrackerViewController.swift; sourceTree = "<group>"; };
+		7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				7DD290EE2A11FAEA000C4245 /* Assets */,
-				5C18C78629F6A11D00A28943 /* Model */,
 				5C18C78529F6A0F100A28943 /* Control */,
 				5C18C78429F6A0DC00A28943 /* View */,
 				5C18C77029F5BB7700A28943 /* AppDelegate.swift */,
@@ -90,18 +89,11 @@
 			children = (
 				5C18C77429F5BB7700A28943 /* ViewController.swift */,
 				5C18C78729F6A18900A28943 /* SettingViewController.swift */,
-				5C18C78929F6A19C00A28943 /* GameViewController.swift */,
-				5C18C78B29F6A1B000A28943 /* HighScoreViewController.swift */,
+				5C18C78929F6A19C00A28943 /* MeditationViewController.swift */,
+				5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */,
+				7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */,
 			);
 			path = Control;
-			sourceTree = "<group>";
-		};
-		5C18C78629F6A11D00A28943 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5C18C78D29F6B22000A28943 /* Bubble.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7DD290EE2A11FAEA000C4245 /* Assets */ = {
@@ -182,13 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C18C78A29F6A19C00A28943 /* GameViewController.swift in Sources */,
+				5C18C78A29F6A19C00A28943 /* MeditationViewController.swift in Sources */,
 				5C18C77529F5BB7700A28943 /* ViewController.swift in Sources */,
+				7DD290F02A1D10C0000C4245 /* InformationViewController.swift in Sources */,
 				5C18C77129F5BB7700A28943 /* AppDelegate.swift in Sources */,
 				5C18C77329F5BB7700A28943 /* SceneDelegate.swift in Sources */,
-				5C18C78E29F6B22000A28943 /* Bubble.swift in Sources */,
 				5C18C78829F6A18900A28943 /* SettingViewController.swift in Sources */,
-				5C18C78C29F6A1B000A28943 /* HighScoreViewController.swift in Sources */,
+				5C18C78C29F6A1B000A28943 /* MeditationTrackerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
