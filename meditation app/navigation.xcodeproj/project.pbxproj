@@ -16,7 +16,6 @@
 		5C18C78829F6A18900A28943 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78729F6A18900A28943 /* SettingViewController.swift */; };
 		5C18C78A29F6A19C00A28943 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78929F6A19C00A28943 /* MeditationViewController.swift */; };
 		5C18C78C29F6A1B000A28943 /* MeditationTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */; };
-		7D7A6B822A1F5AC400AE2F2C /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A6B812A1F5AC400AE2F2C /* SoundViewController.swift */; };
 		7DD290F02A1D10C0000C4245 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		5C18C78729F6A18900A28943 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5C18C78929F6A19C00A28943 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 		5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTrackerViewController.swift; sourceTree = "<group>"; };
-		7D7A6B812A1F5AC400AE2F2C /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +92,6 @@
 				5C18C78929F6A19C00A28943 /* MeditationViewController.swift */,
 				5C18C78B29F6A1B000A28943 /* MeditationTrackerViewController.swift */,
 				7DD290EF2A1D10C0000C4245 /* InformationViewController.swift */,
-				7D7A6B812A1F5AC400AE2F2C /* SoundViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -181,7 +178,6 @@
 				5C18C77529F5BB7700A28943 /* ViewController.swift in Sources */,
 				7DD290F02A1D10C0000C4245 /* InformationViewController.swift in Sources */,
 				5C18C77129F5BB7700A28943 /* AppDelegate.swift in Sources */,
-				7D7A6B822A1F5AC400AE2F2C /* SoundViewController.swift in Sources */,
 				5C18C77329F5BB7700A28943 /* SceneDelegate.swift in Sources */,
 				5C18C78829F6A18900A28943 /* SettingViewController.swift in Sources */,
 				5C18C78C29F6A1B000A28943 /* MeditationTrackerViewController.swift in Sources */,
